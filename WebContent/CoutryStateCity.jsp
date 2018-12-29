@@ -37,7 +37,7 @@
     <form action="DynamicServlet" method="get">
         <div>
             Country:
-            <select name="country" ng-change="GetSelectedCountry()" ng-model="states" ng-options="country for (country, states) in countries">
+            <select name="country"  ng-model="states" ng-options="country for (country, states) in countries">
                 
                 <option value=''>Select</option>
                 
@@ -46,14 +46,14 @@
         <div style='height: 15px;'>
             &nbsp;</div>
         <div>
-            States:<select name="state" ng-change="GetSelectedState()"  ng-model="cities" ng-options="state for (state,city) in states"
+            States:<select name="state"  ng-model="cities" ng-options="state for (state,city) in states"
                ><option value=''>Select</option>
             </select>
         </div>
         <div style='height: 15px;'>
             &nbsp;</div>
         <div>
-            City:<select  name="city" ng-change="GetSelectedCity()" ng-model="city" ng-options=" value as city for (city,value) in cities">
+            City:<select  name="city"  ng-model="city" ng-options=" value as city for (city,value) in cities">
             <option value=''>Select</option>
             </select>
         </div>
